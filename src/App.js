@@ -1,10 +1,18 @@
-
 import './App.css';
-import EmployeeComponent from './components/EmployeeComponent';
+import KennelComponent from './components/KennelComponent';
+import RoostComponent from './components/RoostComponent';
+import AddDog from './components/NewSearchComponent';
+import AddBat from './components/AddBat';
 
 function App() {
   return (
-    <EmployeeComponent />
+    <div>
+      <AddDog />
+      <AddBat />
+      <KennelComponent />
+      <RoostComponent />
+    </div>
+    
   );
 }
 
