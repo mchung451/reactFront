@@ -76,18 +76,18 @@ class AddDog extends React.Component {
                     <input type="text" value={this.state.dogBreed} name="dogBreed" onChange={(e) => this.setFormValue(e)}/> <br/>
                     <label>Birth Year: </label>
                     <input type="number" value={this.state.dogBirthYear} name="dogBirthYear" onChange={(e) => this.setFormValue(e)} /> <br/>
-                    {/* <label>Vaccinated? (true/false): </label>
-                    <input type="text" value={this.state.dogVaccinated} name="dogVaccinated" onChange={(e) => this.setFormValue(e)} /> <br/> */}
-                    {/* 
+                    <label>Vaccinated? (true/false): </label>
+                    <input type="text" value={this.state.dogVaccinated} name="dogVaccinated" onChange={(e) => this.setFormValue(e)} /> <br/>
+                    {/* {/* 
                     <label  for="dogVaccinated" > Vaccinated?:</label>
                     <select name="dogVaccinated" onChange={(e) => this.setFormValue(e)}>
                     <option value={this.state.dogVaccinated}>True</option>
                     <option value={this.state.dogVaccinated}>False</option>
-                    </select> */}
+                    </select>
                     <select name="dogVaccinated" onChange={(event) => this.setFormValue(event)}>
                         <option value={this.state.dogVaccinated}>True</option>
                         <option value={this.state.dogVaccinated}>False</option>
-                        </select>
+                        </select> */}
                     <input type="submit" value="Submit"></input>
                 </form>    
             </div>

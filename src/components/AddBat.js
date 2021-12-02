@@ -58,11 +58,11 @@ class AddBat extends React.Component {
             batWingspan:
                 event.target.name === "batWingspan"
                 ? event.target.value
-                :this.state.batWingspan,
+                : this.state.batWingspan,
             batBlind:
-                event.target.value ==="batBlind"
+                event.target.value === "batBlind"
                 ? event.target.value
-                : this.state.batBlind    
+                : this.state.batBlind,    
         });
    }
 
@@ -79,8 +79,10 @@ class AddBat extends React.Component {
                 <input type="number" value={this.state.batBirthYear} name="batBirthYear" onChange={(e) => this.setFormValue(e)}/>  <br />   
                 <label> Wingspan: </label>
                 <input type="number" value={this.state.batWingspan} name="batWingspan" onChange={(e) => this.setFormValue(e)}/>  <br />   
-                <label> Blind? (true/false): </label>
-                <input type="text" value={this.state.batBlind} name="batBlind" onChange={(e) => this.setFormValue(e)}/>  <br />  
+                {/* <label> Blind? (true/false): </label>
+                <input type="text" value={this.state.batBlind} name="batBlind" onChange={(e) => this.setFormValue(e)}/>  <br />   */}
+                <label>blind? (true/false): </label>
+                    <input type="text" value={this.state.batBlind} name="batBlind" onChange={(e) => this.setFormValue(e)} /> <br/>
                 <input type="submit" value="Submit"></input> 
                 </form>
            </div>
