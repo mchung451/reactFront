@@ -6,11 +6,13 @@ import AddBat from './components/AddBat';
 import Header from './components/Header'
 import SearchBar from './components/Search'
 import React, { useState } from "react";
+import SearchApp from './components/TestSearch'
 
 
 const posts =[
-  {id: '1', name: 'This first post is about React'},
-  {id: '2', name: 'This next post is about Preact!'},
+  {id: '1', name: 'Scooby'},
+  {id: '2', name: 'Scrappy'},
+  {id: '3', name: 'Pluto'}
 ];
 
 const {search} = window.location;
@@ -37,7 +39,7 @@ function App() {
   return (
     <div>
       <Header />
-      <SearchBar 
+      {/* <SearchBar 
         searchQuery={searchQuery}
         setSearchQuery={setSearchQuery}
       /> <br />
@@ -47,10 +49,11 @@ function App() {
           <li key={post.id}>{post.name}</li>
         ))}
       </u1>
-      </div>
+      </div> */}
       <AddDog />
       <AddBat />
-      <KennelComponent />
+      <KennelComponent/>
+      <SearchApp />
       <RoostComponent />
     </div>
     

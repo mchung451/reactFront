@@ -13,8 +13,8 @@ class HeaderComponent extends Component {
         return(
             <div>
                 <header className="header">
-                    <nav className="navbar bg-dark">
-                        <div><a href="https://javaguides.net" className="navbar-brand">TSI Zoo</a></div>
+                    <nav className="navbar bg-dark ">
+                        <div><a href="https://javaguides.net" className="navbar-brand text-center">TSI Zoo</a></div>
                     </nav>
                 </header>
             </div>

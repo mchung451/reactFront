@@ -20,6 +20,18 @@ function KennelComponent() {
         });
     };
 
+
+    function deleteUser(name){
+        fetch(`http://localhost:8080/Kennel/deleteDog?name=${name}`, {
+            method: 'DELETE'
+        }).then((result)=> {
+            result.json().then((resp) => {
+                console.warn(resp)
+                getDogs();
+            })
+        })
+    }
+
     return (
         <div className = "container">
 
@@ -32,6 +44,7 @@ function KennelComponent() {
                         <th> Dog Breed</th>
                         <th> Dog Birth Year</th>
                         <th> Dog Vaccinated</th>
+                        <th> DELETE </th>
                     </tr>
                     
                 </thead>
@@ -44,8 +57,9 @@ function KennelComponent() {
                                 <td> {dog.breed} </td>
                                 <td> {dog.birthYear} </td>
                                 <td> {dog.vaccinated.toString()} </td>
+                                <td onClick={()=>deleteUser(dog.name)}><button> Delete </button></td>
                             </tr>
-                            
+   
                         )
                     }
                 </tbody> 
